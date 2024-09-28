@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Weather App</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="text" name="city">
+            <input type="submit"></input>
+            </input>
+        </form>
+
+        {% if city %}
+        The city is {{city}}
+        {% endif %}
+
+    </body>
+</html>
