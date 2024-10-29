@@ -8,9 +8,11 @@
             </input>
         </form>
 
-        {% if city %}
-        The city is {{city}}
+        {% if name %}
+        <h3>City: {{name}}</h3>
+        <p>Temperature: {{temperature}}</p>
+        <p>Pressure: {{pressure}}</p>
+        <p>Humidity: {{humidity}}</p>
         {% endif %}
-
     </body>
 </html>
